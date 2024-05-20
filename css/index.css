@@ -1,5 +1,35 @@
 /* #region common */
 body {
     margin: 0;
+    height: 100vh;
 }
+
+/* #endregion */
+
+/* #region header */
+#header {
+    height: 60px;
+    background-color: gold;
+}
+
+/* #endregion */
+
+#main {
+    height: calc(100% - 60px);
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+/* #region menu */
+#menu {
+    background-color: skyblue;
+}
+
+/* #endregion */
+
+/* #region content */
+#content {
+    background-color: gainsboro;
+}
+
 /* #endregion */

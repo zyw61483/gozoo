@@ -17,7 +17,7 @@ body {
 #main {
     height: calc(100% - 60px);
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: minmax(280px,20%) 80%;
 }
 
 /* #region menu */

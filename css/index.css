@@ -1,7 +1,23 @@
 /* #region common */
+html,
 body {
     margin: 0;
     height: 100vh;
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+a {
+    color: none;
+}
+
+a:visited {
+    color: #2c3e50
+}
+
+.nav-btn {
+    display: grid;
+    place-items: center;
 }
 
 /* #endregion */
@@ -9,27 +25,39 @@ body {
 /* #region header */
 #header {
     height: 60px;
-    background-color: gold;
+    border-bottom: 1px solid #bdc3c7;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
 }
 
 /* #endregion */
 
 #main {
-    height: calc(100% - 60px);
+    height: calc(100vh - 60px);
     display: grid;
-    grid-template-columns: minmax(280px,20%) 80%;
+    grid-template-columns: minmax(280px, 20%) 5px 80%;
 }
 
 /* #region menu */
 #menu {
-    background-color: skyblue;
+    border-right: 1px solid #bdc3c7;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+}
+
+#icon-bar {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 30px 30px 30px auto;
+    height: 30px;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+#add {
+    width: 30px;
 }
 
 /* #endregion */
 
 /* #region content */
-#content {
-    background-color: gainsboro;
-}
+#content {}
 
 /* #endregion */
